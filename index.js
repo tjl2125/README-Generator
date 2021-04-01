@@ -1,7 +1,7 @@
 const fs = require("fs");
 const questions = require("./questions.js");
 const inquirer = require("inquirer");
-const generateHTML = (answers) =>
+const generateREADME = (answers) =>
 `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +32,7 @@ inquirer
     .prompt(questions)
     .then((data) => {
         const filename = `${data.name.toLowerCase().split(' ').join('')}.md`;
-        fs.writeFile(filename, generateHTML(data), (err) =>
+        fs.writeFile(filename, generateREADME(data), (err) =>
           err ? console.log(err) : console.log('Success!')
         );
       });

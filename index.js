@@ -1,6 +1,7 @@
 const fs = require("fs");
 const questions = require("./questions.js");
 const inquirer = require("inquirer");
+
 const generateREADME = (answers) =>
 `# Table of Contents:
 * [Title](#Title)

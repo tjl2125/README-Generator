@@ -46,7 +46,7 @@ My Email is ${answers.email}. Feel free to reach me here.`;
 inquirer
     .prompt(questions)
     .then((data) => {
-        const filename = `README.md`;
+        const filename = `myREADME.md`;
         fs.writeFile(filename, generateREADME(data), (err) =>
           err ? console.log(err) : console.log('Success!')
         );

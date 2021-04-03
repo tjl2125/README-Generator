@@ -1,10 +1,4 @@
-const fs = require("fs");
-const questions = require("./questions.js");
-const inquirer = require("inquirer");
-
-const generateREADME = (answers) =>
-
-`# Table of Contents:
+# Table of Contents:
 * [Title](#Title)
 * [Description](#Description)
 * [Usage](#Usage)
@@ -15,24 +9,23 @@ const generateREADME = (answers) =>
 * [Github](#Github)
 * [Email](#Email)
 
-# Title: 
-${answers.title}
+# Title: Generator
 
 ## Description:
-${answers.description}
+sfds
 
-##Usage
-${answers.usage}
+#Usage
+dsfd
 
-##Contribution Guidelines
-${answers.contribution}
+#Contribution Guidelines
+ss
 
-##Tests
-Some of the tests that I ran for this project are: ${answers.tests}.
+#Tests
+Some of the tests that I ran for this project are: fedfs.
 
 #License
 MIT License
-Copyright (c) 2021 ${answers.name}
+Copyright (c) 2021 Taylor 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -50,16 +43,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 #Github
-Please visit my ${answers.github} to visit my work.
+Please visit my dfdfs to visit my work.
 
 #Email
-My Email is ${answers.email}. Feel free to reach me here.`;
-
-inquirer
-    .prompt(questions)
-    .then((data) => {
-        const filename = `myREADME.md`;
-        fs.writeFile(filename, generateREADME(data), (err) =>
-          err ? console.log(err) : console.log('Success!')
-        );
-      });
+My Email is dsfvsd. Feel free to reach me here.

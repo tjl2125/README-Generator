@@ -3,25 +3,33 @@ const questions = require("./questions.js");
 const inquirer = require("inquirer");
 
 const generateREADME = (answers) =>
+
 `# Table of Contents:
 * [Title](#Title)
 * [Description](#Description)
 * [Usage](#Usage)
+* [Installation](#Installation)
 * [Contribution](#Contribution)
 * [Tests](#Tests)
 * [License](#License)
 * [Github](#Github)
 * [Email](#Email)
+
 # Title:
 # ${answers.title}
+
 ## Description:
 ${answers.description}
+
 #Usage
 ${answers.usage}
+
 #Contribution Guidelines
 ${answers.contribution}
+
 #Tests
 Some of the tests that I ran for this project are: ${answers.tests}.
+
 #License
 MIT License
 Copyright (c) 2021 ${answers.name}
@@ -40,10 +48,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 #Github
 Please visit my ${answers.github} to visit my work.
+
 #Email
 My Email is ${answers.email}. Feel free to reach me here.`;
+
 inquirer
     .prompt(questions)
     .then((data) => {

@@ -12,23 +12,28 @@ module.exports = [
 	{
 		type: 'input',
 		name: 'description',
-		message: 'Share a little bit about project.',
+		message: 'Please provide a summary of the project.',
 	},
-  {
-    type: 'input',
-    name: 'usage',
-    message: 'What is the deployed link of your project? (Please put https:// in it)',
-  },
+  	{
+    	type: 'input',
+    	name: 'usage',
+    	message: 'What is the deployed link of your project? (Must put https:// in it)',
+  	},
+	{
+		type: 'input',
+		name: 'installation',
+		message: 'Please provide instructions on how to run your specific project.',
+	},
 	{
 		type: 'input',
 		name: 'contribution',
-		message: 'Share instructions on how others can contribute to your project',
+		message: 'Share instructions on how others can contribute to your project.',
 	},
-  {
-    type: 'input',
-    name: 'tests',
-    message: 'Share some of the tests you ran for your project.',
-  },
+  	{
+    	type: 'input',
+    	name: 'tests',
+    	message: 'Please provide some of the tests you ran for your project.',
+  	},
 	{
 		type: 'input',
 		name: 'github',

@@ -64,20 +64,20 @@ inquirer
         let badge = ""; 
         switch(data.license) {
           case 'MIT':
-            data.license = licenseText.mit;
-            badge = badgeIcon.mit
+            data.license = licenses.mit;
+            badge = licenses.mitBadge;
             break;
           case 'Apache':
-            data.license = licenseText.apache;
-            badge = badgeIcon.apache
+            data.license = licenses.apache;
+            badge = licenses.apacheBadge; 
             break;
           case 'GNU GPLv3':
-            data.license = licenseText.gnu;
-            badge = badgeIcon.gnu
+            data.license = licenses.gnu;
+            badge = licenses.gnuBadge
             break;
           case 'ISC':
-            data.license = licenseText.isc;
-            badge = badgeIcon.isc
+            data.license = licenses.isc;
+            badge = licenses.iscBadge; 
             break;
         }
         fs.writeFile(filename, generateREADME(data), (err) =>

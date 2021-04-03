@@ -6,9 +6,9 @@ const gnuBadge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3
 
 const iscBadge = `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`
 
-const apache = `Apache License`
-const mit = `MIT License`
-const gnu = `GNU GENERAL PUBLIC LICENSE`
+const apache = `- <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache 2.0</a>`
+const mit = `- <a href="https://opensource.org/licenses/MIT" target="_blank">MIT</a>  `
+const gnu = `- <a href="https://www.gnu.org/licenses/lgpl-3.0.en.html" target="_blank">GNU LGPL v3</a>`
 const isc = `ISC License`
 
 module.exports.apacheBadge = apacheBadge;

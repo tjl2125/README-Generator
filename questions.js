@@ -51,9 +51,6 @@ module.exports = [
 		choices: [
 		  'Apache License 2.0',
 		  'GNU GPLv3',
-		  'GNU AGPL v3',
-		  'GNU LGPL v3',
-		  'GNU FDL v1.3',
 		  'IBM',
 		  'MIT',
 		  'Mozilla Public License 2.0',

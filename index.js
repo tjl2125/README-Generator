@@ -23,7 +23,7 @@ ${answers.description}
 ## Usage:
 ${answers.usage}
 
-## Contribution Guidelines:
+## Contribution:
 ${answers.contribution}
 
 ## Tests
@@ -31,7 +31,9 @@ Some of the tests that I ran for this project include: ${answers.tests}.
 
 # License
 This project is under the ${answers.license} License
+
 ![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
+
 Copyright (c) 2021 ${answers.name}
 
 # Questions

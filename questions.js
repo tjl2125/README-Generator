@@ -2,7 +2,7 @@ module.exports = [
 	{
 		type: 'input',
 		name: 'name',
-		message: 'What is your name?',
+		message: 'What is your name or username?',
 	},
 	{
 		type: 'input',
@@ -49,12 +49,12 @@ module.exports = [
 		type: 'checkbox',
 		message: 'Select a License',
 		choices: [
-		  'Apache License 2.0',
-		  'GNU GPLv3',
-		  'IBM',
-		  'MIT',
-		  'Mozilla Public License 2.0',
-		  'The zlib/libpng License',
+			"Apache",
+			"GNU",
+			"ISC",
+			"MIT",
+			"Mozilla",
+			"Zlib"
 		],
 	  },
 ];

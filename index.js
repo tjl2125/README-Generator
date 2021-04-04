@@ -1,12 +1,12 @@
 const fs = require("fs");
 const questions = require("./questions.js");
 const inquirer = require("inquirer");
-// const licenseFuncs = require('./utils/generateMarkdown.js');
-const licenses = require ("./utils/licenses.js"); 
 
 const generateREADME = (answers) =>
 
-`# Table of Contents:
+`# Title: ${answers.title}
+
+# Table of Contents:
 * [Title](#Title)
 * [Description](#Description)
 * [Usage](#Usage)
@@ -17,69 +17,35 @@ const generateREADME = (answers) =>
 * [Github](#Github)
 * [Email](#Email)
 
-# Title: ${answers.title}
-
 ## Description:
 ${answers.description}
 
-##Usage:
+## Usage:
 ${answers.usage}
 
-##Contribution Guidelines:
+## Contribution Guidelines:
 ${answers.contribution}
 
-##Tests
+## Tests
 Some of the tests that I ran for this project include: ${answers.tests}.
 
-#License
-MIT License
+# License
+This project is under the ${answers.license} License
+![badge](https://img.shields.io/badge/license-${answers.license}-brightgreen)
 Copyright (c) 2021 ${answers.name}
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
 
+# Questions
+## Github
+Here is my profile: https://github.com/https://github.com/Defy1x${answers.github}  if you want to see more of my work.
 
-#Github
-Please visit my ${answers.github} to visit my work.
-
-#Email
+## Email
 Here is my email: ${answers.email}. Feel free to reach me here.`;
 
 inquirer
     .prompt(questions)
     .then((data) => {
         const filename = `myREADME.md`;
-        let badge = ""; 
-        switch(data.license) {
-          case 'MIT':
-            data.license = licenses.mit;
-            badge = licenses.mitBadge;
-            break;
-          case 'Apache':
-            data.license = licenses.apache;
-            badge = licenses.apacheBadge; 
-            break;
-          case 'GNU GPLv3':
-            data.license = licenses.gnu;
-            badge = licenses.gnuBadge
-            break;
-          case 'ISC':
-            data.license = licenses.isc;
-            badge = licenses.iscBadge; 
-            break;
-        }
+      
         fs.writeFile(filename, generateREADME(data), (err) =>
           err ? console.log(err) : console.log('Success!')
         );

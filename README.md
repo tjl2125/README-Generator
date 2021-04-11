@@ -31,7 +31,9 @@ https://github.com/tjl2125/README-Generator
 
 ## Link to Demo Video/Screenshots 
 https://drive.google.com/file/d/1eQX_6TIIGrk0HRlCcVagISKPmSiK5NQx/view 
+
 ![Demo Video](./assets/Demo-video.mp4)
+
 ![Demo Screenshot](./assets/Screenshot.png)
 
 ## License

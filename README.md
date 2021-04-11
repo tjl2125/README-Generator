@@ -30,9 +30,8 @@ Some of the tests that I ran for this project include: testing all of the option
 https://github.com/tjl2125/README-Generator
 
 ## Link to Demo Video/Screenshots 
-https://drive.google.com/file/d/1eQX_6TIIGrk0HRlCcVagISKPmSiK5NQx/view 
 
-![Demo Video](./assets/Demo-video.mp4)
+![Demo Video](https://drive.google.com/file/d1eQX_6TIIGrk0HRlCcVagISKPmSiK5NQx/view)
 
 ![Demo Screenshot](./assets/Screenshot.png)
 
